@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026年欧美假日清单 - 跨境电商专用</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-card .number {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .stat-card .label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h2 i {
+            color: #667eea;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            font-size: 0.9rem;
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+
+        tr:hover {
+            background-color: #f8f9ff;
+        }
+
+        .high-priority {
+            background-color: #ffe6e6;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .medium-priority {
+            background-color: #fff2cc;
+            border-left: 4px solid #f39c12;
+        }
+
+        .low-priority {
+            background-color: #e8f4fd;
+            border-left: 4px solid #3498db;
+        }
+
+        .download-section {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .tip-card {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .tip-card h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .tip-card p {
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+
+        .country-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            background: transparent;
+            color: #667eea;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header fade-in">
+            <h1><i class="fas fa-calendar-alt"></i> 2026年欧美假日清单</h1>
+            <p class="subtitle">跨境电商行业专用 · 全年营销节点规划</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="number">69</div>
+                    <div class="label">节假日总数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">7</div>
+                    <div class="label">覆盖国家</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">12</div>
+                    <div class="label">营销节点</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">95%</div>
+                    <div class="label">最高购物指数</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-grid">
+            <div class="section fade-in">
+                <h2><i class="fas fa-calendar-check"></i> 2026年欧美节假日详细清单</h2>
+                
+                <div class="country-filter">
+                    <button class="filter-btn active" onclick="filterTable('all')">全部</button>
+                    <button class="filter-btn" onclick="filterTable('美国')">美国</button>
+                    <button class="filter-btn" onclick="filterTable('加拿大')">加拿大</button>
+                    <button class="filter-btn" onclick="filterTable('英国')">英国</button>
+                    <button class="filter-btn" onclick="filterTable('德国')">德国</button>
+                    <button class="filter-btn" onclick="filterTable('法国')">法国</button>
+                    <button class="filter-btn" onclick="filterTable('意大利')">意大利</button>
+                    <button class="filter-btn" onclick="filterTable('西班牙')">西班牙</button>
+                </div>
+
+                <div class="table-container">
+                    <table id="holidaysTable">
+                        <thead>
+                            <tr>
+                                <th>日期</th>
+                                <th>节日名称</th>
+                                <th>国家</th>
+                                <th>类型</th>
+                                <th>营销建议</th>
+                                <th>重要程度</th>
+                                <th>购物指数</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="high-priority" data-country="美国">
+                                <td>2026-01-01</td>
+                                <td>新年元旦</td>
+                                <td>美国</td>
+                                <td>联邦假日</td>
+                                <td>新年促销活动，健康健身类产品热销</td>
+                                <td>高</td>
+                                <td>85%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="加拿大">
+                                <td>2026-01-01</td>
+                                <td>新年元旦</td>
+                                <td>加拿大</td>
+                                <td>法定假日</td>
+                                <td>新年促销，冬季用品</td>
+                                <td>高</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="英国">
+                                <td>2026-01-01</td>
+                                <td>新年元旦</td>
+                                <td>英国</td>
+                                <td>银行假日</td>
+                                <td>新年促销，健身用品</td>
+                                <td>高</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="德国">
+                                <td>2026-01-01</td>
+                                <td>新年元旦</td>
+                                <td>德国</td>
+                                <td>法定假日</td>
+                                <td>新年促销，健身用品</td>
+                                <td>高</td>
+                                <td>70%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="法国">
+                                <td>2026-01-01</td>
+                                <td>新年元旦</td>
+                                <td>法国</td>
+                                <td>法定假日</td>
+                                <td>新年促销，美容护肤</td>
+                                <td>高</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="意大利">
+                                <td>2026-01-01</td>
+                                <td>新年元旦</td>
+                                <td>意大利</td>
+                                <td>法定假日</td>
+                                <td>新年促销，时尚产品</td>
+                                <td>高</td>
+                                <td>70%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="西班牙">
+                                <td>2026-01-01</td>
+                                <td>新年元旦</td>
+                                <td>西班牙</td>
+                                <td>法定假日</td>
+                                <td>新年促销，三王节预热</td>
+                                <td>高</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr class="low-priority" data-country="德国">
+                                <td>2026-01-06</td>
+                                <td>主显节</td>
+                                <td>德国</td>
+                                <td>法定假日</td>
+                                <td>冬季用品，宗教主题</td>
+                                <td>低</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="意大利">
+                                <td>2026-01-06</td>
+                                <td>主显节</td>
+                                <td>意大利</td>
+                                <td>法定假日</td>
+                                <td>宗教主题，传统礼品</td>
+                                <td>中</td>
+                                <td>40%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="西班牙">
+                                <td>2026-01-06</td>
+                                <td>三王节</td>
+                                <td>西班牙</td>
+                                <td>法定假日</td>
+                                <td>儿童礼品，传统糖果</td>
+                                <td>高</td>
+                                <td>85%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="美国">
+                                <td>2026-01-19</td>
+                                <td>马丁·路德·金纪念日</td>
+                                <td>美国</td>
+                                <td>联邦假日</td>
+                                <td>公民权利主题营销，服务行业促销</td>
+                                <td>中</td>
+                                <td>45%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="美国">
+                                <td>2026-02-16</td>
+                                <td>总统日</td>
+                                <td>美国</td>
+                                <td>联邦假日</td>
+                                <td>大型促销季开始，服装家电折扣</td>
+                                <td>高</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="加拿大">
+                                <td>2026-02-16</td>
+                                <td>家庭日</td>
+                                <td>加拿大</td>
+                                <td>法定假日</td>
+                                <td>家庭用品促销，亲子产品</td>
+                                <td>中</td>
+                                <td>60%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="德国">
+                                <td>2026-03-08</td>
+                                <td>妇女节</td>
+                                <td>德国</td>
+                                <td>法定假日</td>
+                                <td>美容护肤，女性礼品</td>
+                                <td>中</td>
+                                <td>65%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="加拿大">
+                                <td>2026-04-03</td>
+                                <td>耶稣受难日</td>
+                                <td>加拿大</td>
+                                <td>法定假日</td>
+                                <td>复活节预热，春季装饰</td>
+                                <td>中</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="德国">
+                                <td>2026-04-03</td>
+                                <td>耶稣受难日</td>
+                                <td>德国</td>
+                                <td>法定假日</td>
+                                <td>复活节预热，春季装饰</td>
+                                <td>中</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="英国">
+                                <td>2026-04-03</td>
+                                <td>耶稣受难日</td>
+                                <td>英国</td>
+                                <td>银行假日</td>
+                                <td>复活节预热，春季装饰</td>
+                                <td>中</td>
+                                <td>55%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="西班牙">
+                                <td>2026-04-03</td>
+                                <td>耶稣受难日</td>
+                                <td>西班牙</td>
+                                <td>法定假日</td>
+                                <td>宗教主题，春季装饰</td>
+                                <td>中</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="英国">
+                                <td>2026-04-06</td>
+                                <td>复活节星期一</td>
+                                <td>英国</td>
+                                <td>银行假日</td>
+                                <td>复活节礼品，春季用品</td>
+                                <td>中</td>
+                                <td>65%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="德国">
+                                <td>2026-04-06</td>
+                                <td>复活节星期一</td>
+                                <td>德国</td>
+                                <td>法定假日</td>
+                                <td>复活节礼品，春季用品</td>
+                                <td>中</td>
+                                <td>60%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="法国">
+                                <td>2026-04-06</td>
+                                <td>复活节星期一</td>
+                                <td>法国</td>
+                                <td>法定假日</td>
+                                <td>复活节礼品，春季时尚</td>
+                                <td>中</td>
+                                <td>60%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="意大利">
+                                <td>2026-04-06</td>
+                                <td>复活节星期一</td>
+                                <td>意大利</td>
+                                <td>法定假日</td>
+                                <td>复活节礼品，春季时尚</td>
+                                <td>中</td>
+                                <td>55%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="意大利">
+                                <td>2026-04-25</td>
+                                <td>解放日</td>
+                                <td>意大利</td>
+                                <td>法定假日</td>
+                                <td>爱国主题，历史纪念</td>
+                                <td>中</td>
+                                <td>35%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="德国">
+                                <td>2026-05-01</td>
+                                <td>劳动节</td>
+                                <td>德国</td>
+                                <td>法定假日</td>
+                                <td>春季促销，户外活动</td>
+                                <td>高</td>
+                                <td>65%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="法国">
+                                <td>2026-05-01</td>
+                                <td>劳动节</td>
+                                <td>法国</td>
+                                <td>法定假日</td>
+                                <td>春季促销，美容产品</td>
+                                <td>高</td>
+                                <td>65%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="意大利">
+                                <td>2026-05-01</td>
+                                <td>劳动节</td>
+                                <td>意大利</td>
+                                <td>法定假日</td>
+                                <td>春季促销，时尚产品</td>
+                                <td>高</td>
+                                <td>60%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="西班牙">
+                                <td>2026-05-01</td>
+                                <td>劳动节</td>
+                                <td>西班牙</td>
+                                <td>法定假日</td>
+                                <td>春季促销，户外用品</td>
+                                <td>中</td>
+                                <td>55%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="英国">
+                                <td>2026-05-04</td>
+                                <td>五月银行假日</td>
+                                <td>英国</td>
+                                <td>银行假日</td>
+                                <td>春季促销，花园用品</td>
+                                <td>中</td>
+                                <td>60%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="德国">
+                                <td>2026-05-14</td>
+                                <td>耶稣升天日</td>
+                                <td>德国</td>
+                                <td>法定假日</td>
+                                <td>宗教主题，春季装饰</td>
+                                <td>低</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="加拿大">
+                                <td>2026-05-18</td>
+                                <td>维多利亚日</td>
+                                <td>加拿大</td>
+                                <td>法定假日</td>
+                                <td>花园用品，户外家具</td>
+                                <td>高</td>
+                                <td>70%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="英国">
+                                <td>2026-05-25</td>
+                                <td>春季银行假日</td>
+                                <td>英国</td>
+                                <td>银行假日</td>
+                                <td>夏季预热，户外用品</td>
+                                <td>中</td>
+                                <td>65%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="美国">
+                                <td>2026-05-25</td>
+                                <td>阵亡将士纪念日</td>
+                                <td>美国</td>
+                                <td>联邦假日</td>
+                                <td>夏季用品促销，户外活动产品</td>
+                                <td>高</td>
+                                <td>70%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="意大利">
+                                <td>2026-06-02</td>
+                                <td>共和国日</td>
+                                <td>意大利</td>
+                                <td>法定假日</td>
+                                <td>国庆主题，爱国产品</td>
+                                <td>高</td>
+                                <td>70%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="美国">
+                                <td>2026-06-19</td>
+                                <td>六月节</td>
+                                <td>美国</td>
+                                <td>联邦假日</td>
+                                <td>文化庆典用品，支持黑人商家</td>
+                                <td>中</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="美国">
+                                <td>2026-07-03</td>
+                                <td>独立日(观察日)</td>
+                                <td>美国</td>
+                                <td>联邦假日</td>
+                                <td>爱国主题商品，烧烤户外用品</td>
+                                <td>高</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="美国">
+                                <td>2026-07-04</td>
+                                <td>独立日</td>
+                                <td>美国</td>
+                                <td>联邦假日</td>
+                                <td>国庆大促，烟花烧烤用品</td>
+                                <td>高</td>
+                                <td>90%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="加拿大">
+                                <td>2026-07-01</td>
+                                <td>加拿大日</td>
+                                <td>加拿大</td>
+                                <td>法定假日</td>
+                                <td>国庆主题商品，红白装饰</td>
+                                <td>高</td>
+                                <td>85%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="法国">
+                                <td>2026-07-14</td>
+                                <td>国庆日</td>
+                                <td>法国</td>
+                                <td>法定假日</td>
+                                <td>国庆主题商品，红白蓝装饰</td>
+                                <td>高</td>
+                                <td>85%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="加拿大">
+                                <td>2026-08-03</td>
+                                <td>公民日</td>
+                                <td>加拿大</td>
+                                <td>法定假日</td>
+                                <td>夏季清仓，返校预热</td>
+                                <td>中</td>
+                                <td>65%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="英国">
+                                <td>2026-08-31</td>
+                                <td>夏季银行假日</td>
+                                <td>英国</td>
+                                <td>银行假日</td>
+                                <td>夏季清仓，返校用品</td>
+                                <td>中</td>
+                                <td>70%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="意大利">
+                                <td>2026-08-15</td>
+                                <td>圣母升天日</td>
+                                <td>意大利</td>
+                                <td>法定假日</td>
+                                <td>夏季度假用品，宗教主题</td>
+                                <td>中</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="西班牙">
+                                <td>2026-08-15</td>
+                                <td>圣母升天日</td>
+                                <td>西班牙</td>
+                                <td>法定假日</td>
+                                <td>夏季度假用品，宗教主题</td>
+                                <td>中</td>
+                                <td>45%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="美国">
+                                <td>2026-09-07</td>
+                                <td>劳工节</td>
+                                <td>美国</td>
+                                <td>联邦假日</td>
+                                <td>秋季促销，返校用品折扣</td>
+                                <td>高</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="加拿大">
+                                <td>2026-09-07</td>
+                                <td>劳工节</td>
+                                <td>加拿大</td>
+                                <td>法定假日</td>
+                                <td>秋季促销，返校用品</td>
+                                <td>高</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="美国">
+                                <td>2026-10-12</td>
+                                <td>哥伦布日</td>
+                                <td>美国</td>
+                                <td>联邦假日</td>
+                                <td>秋季装饰，万圣节预热</td>
+                                <td>中</td>
+                                <td>55%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="加拿大">
+                                <td>2026-10-12</td>
+                                <td>感恩节</td>
+                                <td>加拿大</td>
+                                <td>法定假日</td>
+                                <td>秋季装饰，家庭聚餐用品</td>
+                                <td>高</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="西班牙">
+                                <td>2026-10-12</td>
+                                <td>国庆日</td>
+                                <td>西班牙</td>
+                                <td>法定假日</td>
+                                <td>爱国主题，国庆促销</td>
+                                <td>高</td>
+                                <td>70%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="德国">
+                                <td>2026-10-03</td>
+                                <td>德国统一日</td>
+                                <td>德国</td>
+                                <td>法定假日</td>
+                                <td>爱国主题，国庆促销</td>
+                                <td>高</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="美国">
+                                <td>2026-11-11</td>
+                                <td>退伍军人节</td>
+                                <td>美国</td>
+                                <td>联邦假日</td>
+                                <td>军事主题商品，爱国促销</td>
+                                <td>中</td>
+                                <td>45%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="法国">
+                                <td>2026-11-01</td>
+                                <td>诸圣节</td>
+                                <td>法国</td>
+                                <td>法定假日</td>
+                                <td>秋季装饰，纪念用品</td>
+                                <td>中</td>
+                                <td>45%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="意大利">
+                                <td>2026-11-01</td>
+                                <td>诸圣节</td>
+                                <td>意大利</td>
+                                <td>法定假日</td>
+                                <td>宗教主题，秋季装饰</td>
+                                <td>中</td>
+                                <td>45%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="西班牙">
+                                <td>2026-11-01</td>
+                                <td>诸圣节</td>
+                                <td>西班牙</td>
+                                <td>法定假日</td>
+                                <td>秋季装饰，纪念用品</td>
+                                <td>中</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="法国">
+                                <td>2026-11-11</td>
+                                <td>一战停战日</td>
+                                <td>法国</td>
+                                <td>法定假日</td>
+                                <td>纪念主题，爱国产品</td>
+                                <td>中</td>
+                                <td>35%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="美国">
+                                <td>2026-11-26</td>
+                                <td>感恩节</td>
+                                <td>美国</td>
+                                <td>联邦假日</td>
+                                <td>家庭聚餐用品，感恩主题</td>
+                                <td>高</td>
+                                <td>85%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="意大利">
+                                <td>2026-12-08</td>
+                                <td>圣母无染原罪日</td>
+                                <td>意大利</td>
+                                <td>法定假日</td>
+                                <td>宗教主题，圣诞预热</td>
+                                <td>中</td>
+                                <td>60%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="西班牙">
+                                <td>2026-12-08</td>
+                                <td>圣母无染原罪日</td>
+                                <td>西班牙</td>
+                                <td>法定假日</td>
+                                <td>宗教主题，圣诞预热</td>
+                                <td>中</td>
+                                <td>55%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="西班牙">
+                                <td>2026-12-06</td>
+                                <td>宪法日</td>
+                                <td>西班牙</td>
+                                <td>法定假日</td>
+                                <td>爱国主题，法律相关</td>
+                                <td>中</td>
+                                <td>35%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="美国">
+                                <td>2026-12-25</td>
+                                <td>圣诞节</td>
+                                <td>美国</td>
+                                <td>联邦假日</td>
+                                <td>礼品购物季高峰，装饰用品</td>
+                                <td>高</td>
+                                <td>95%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="加拿大">
+                                <td>2026-12-25</td>
+                                <td>圣诞节</td>
+                                <td>加拿大</td>
+                                <td>法定假日</td>
+                                <td>礼品购物高峰，装饰用品</td>
+                                <td>高</td>
+                                <td>95%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="英国">
+                                <td>2026-12-25</td>
+                                <td>圣诞节</td>
+                                <td>英国</td>
+                                <td>银行假日</td>
+                                <td>礼品购物高峰，装饰用品</td>
+                                <td>高</td>
+                                <td>95%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="德国">
+                                <td>2026-12-25</td>
+                                <td>圣诞节</td>
+                                <td>德国</td>
+                                <td>法定假日</td>
+                                <td>礼品购物，装饰用品</td>
+                                <td>高</td>
+                                <td>90%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="法国">
+                                <td>2026-12-25</td>
+                                <td>圣诞节</td>
+                                <td>法国</td>
+                                <td>法定假日</td>
+                                <td>礼品购物，美食装饰</td>
+                                <td>高</td>
+                                <td>95%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="意大利">
+                                <td>2026-12-25</td>
+                                <td>圣诞节</td>
+                                <td>意大利</td>
+                                <td>法定假日</td>
+                                <td>礼品购物，美食装饰</td>
+                                <td>高</td>
+                                <td>90%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="西班牙">
+                                <td>2026-12-25</td>
+                                <td>圣诞节</td>
+                                <td>西班牙</td>
+                                <td>法定假日</td>
+                                <td>礼品购物，美食装饰</td>
+                                <td>高</td>
+                                <td>90%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="加拿大">
+                                <td>2026-12-26</td>
+                                <td>节礼日</td>
+                                <td>加拿大</td>
+                                <td>法定假日</td>
+                                <td>年末清仓，打折季开始</td>
+                                <td>高</td>
+                                <td>90%</td>
+                            </tr>
+                            <tr class="high-priority" data-country="英国">
+                                <td>2026-12-26</td>
+                                <td>节礼日</td>
+                                <td>英国</td>
+                                <td>银行假日</td>
+                                <td>年末大促，清仓折扣</td>
+                                <td>高</td>
+                                <td>90%</td>
+                            </tr>
+                            <tr class="medium-priority" data-country="德国">
+                                <td>2026-12-26</td>
+                                <td>圣诞节第二天</td>
+                                <td>德国</td>
+                                <td>法定假日</td>
+                                <td>年末促销，冬季用品</td>
+                                <td>中</td>
+                                <td>65%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section fade-in">
+                <h2><i class="fas fa-lightbulb"></i> 跨境电商营销建议</h2>
+                
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4><i class="fas fa-calendar-star"></i> 关键购物节点</h4>
+                        <p>重点关注11-12月的黑五、网一和圣诞季，这是全年最重要的购物季，购物指数高达95%。提前3个月开始准备库存和营销策略。</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <h4><i class="fas fa-globe-americas"></i> 地区差异化</h4>
+                        <p>美国市场重视感恩节和独立日，欧洲市场更注重传统节日如复活节和诸圣节。针对不同国家制定本土化营销策略。</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <h4><i class="fas fa-shipping-fast"></i> 物流提前规划</h4>
+                        <p>节假日期间物流压力大，建议提前1-2周停止接单或调整配送时间。重点关注圣诞节和新年期间的物流安排。</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <h4><i class="fas fa-chart-line"></i> 数据驱动决策</h4>
+                        <p>根据不同节假日的购物指数分配营销预算，高指数节日投入更多资源，中低指数节日适度参与。</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <h4><i class="fas fa-mobile-alt"></i> 移动端优化</h4>
+                        <p>节假日期间移动端购物比例显著增加，确保网站和APP的移动端体验流畅，支付流程简化。</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <h4><i class="fas fa-gift"></i> 礼品包装服务</h4>
+                        <p>圣诞节、情人节等礼品类节日，提供专业的礼品包装和贺卡服务，提升客户体验和订单价值。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section fade-in">
+                <h2><i class="fas fa-rocket"></i> 2026年营销节点时间线</h2>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>月份</th>
+                                <th>营销节点</th>
+                                <th>重点国家</th>
+                                <th>主推产品</th>
+                                <th>营销重点</th>
+                                <th>预算建议</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="high-priority">
+                                <td>1月</td>
+                                <td>新年+冬季促销</td>
+                                <td>全部</td>
+                                <td>健身用品、健康产品、冬季服装</td>
+                                <td>新年决心、健康生活</td>
+                                <td>高</td>
+                            </tr>
+                            <tr class="high-priority">
+                                <td>2月</td>
+                                <td>情人节预热</td>
+                                <td>美国、英国、法国、意大利</td>
+                                <td>珠宝、香水、鲜花、浪漫礼品</td>
+                                <td>爱情主题、浪漫礼品</td>
+                                <td>高</td>
+                            </tr>
+                            <tr class="medium-priority">
+                                <td>3月</td>
+                                <td>复活节预热+春季促销</td>
+                                <td>德国、英国、意大利、西班牙</td>
+                                <td>春季装饰、复活节礼品、园艺用品</td>
+                                <td>春季新生、复活节传统</td>
+                                <td>中</td>
+                            </tr>
+                            <tr class="high-priority">
+                                <td>4月</td>
+                                <td>复活节+春季大促</td>
+                                <td>全部欧洲国家</td>
+                                <td>复活节礼品、春季服装、户外用品</td>
+                                <td>家庭聚会、春季活动</td>
+                                <td>高</td>
+                            </tr>
+                            <tr class="high-priority">
+                                <td>5月</td>
+                                <td>母亲节+夏季预热</td>
+                                <td>美国、加拿大、英国、法国</td>
+                                <td>美容护肤、家居用品、服装、鲜花</td>
+                                <td>感恩母亲、家庭关爱</td>
+                                <td>高</td>
+                            </tr>
+                            <tr class="high-priority">
+                                <td>6月</td>
+                                <td>父亲节+夏季促销</td>
+                                <td>美国、加拿大、英国、德国</td>
+                                <td>电子产品、户外用品、运动装备</td>
+                                <td>感恩父亲、户外活动</td>
+                                <td>高</td>
+                            </tr>
+                            <tr class="high-priority">
+                                <td>7月</td>
+                                <td>夏季大促+国庆日</td>
+                                <td>美国、加拿大、法国</td>
+                                <td>户外用品、旅游产品、夏季服装</td>
+                                <td>夏季假期、国庆庆典</td>
+                                <td>高</td>
+                            </tr>
+                            <tr class="medium-priority">
+                                <td>8月</td>
+                                <td>返校季+夏末清仓</td>
+                                <td>美国、加拿大、英国、德国</td>
+                                <td>学习用品、秋季服装、家居用品</td>
+                                <td>返校准备、秋季预热</td>
+                                <td>中</td>
+                            </tr>
+                            <tr class="medium-priority">
+                                <td>9月</td>
+                                <td>秋季促销+感恩节预热</td>
+                                <td>美国、加拿大</td>
+                                <td>秋季装饰、家居用品、厨房用品</td>
+                                <td>秋季装饰、感恩节准备</td>
+                                <td>中</td>
+                            </tr>
+                            <tr class="high-priority">
+                                <td>10月</td>
+                                <td>万圣节+秋季大促</td>
+                                <td>美国、加拿大、英国</td>
+                                <td>万圣节装饰、服装、糖果</td>
+                                <td>万圣节主题、秋季装饰</td>
+                                <td>高</td>
+                            </tr>
+                            <tr class="high-priority">
+                                <td>11月</td>
+                                <td>黑色星期五+感恩节</td>
+                                <td>美国、加拿大</td>
+                                <td>全部品类大促</td>
+                                <td>年度最大促销季</td>
+                                <td>极高</td>
+                            </tr>
+                            <tr class="high-priority">
+                                <td>12月</td>
+                                <td>圣诞节+年末清仓</td>
+                                <td>全部</td>
+                                <td>礼品、装饰、食品、服装</td>
+                                <td>圣诞购物季、年末促销</td>
+                                <td>极高</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="download-section fade-in">
+            <h2><i class="fas fa-download"></i> 下载完整清单</h2>
+            <p>获取完整的Excel版本，包含所有节假日详情和营销建议</p>
+            <a href="2026欧美假日清单跨境电商专用.xlsx" class="download-btn" download>
+                <i class="fas fa-file-excel"></i>
+                下载Excel表格
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // 表格筛选功能
+        function filterTable(country) {
+            const rows = document.querySelectorAll('#holidaysTable tbody tr');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // 更新按钮状态
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // 筛选行
+            rows.forEach(row => {
+                if (country === 'all' || row.dataset.country === country) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        // 页面加载动画
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+
+        // 滚动动画
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
